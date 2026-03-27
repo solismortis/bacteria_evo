@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 import imageio
 
 
-MAKE_GIF = True
+MAKE_GIF = False  # Warning. Very inefficient
 FRAME_DURATION = 0.3
 
 STEPS = 100
 
-TIME = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+TIME = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")
 os.makedirs(f'./runs/{TIME}')
 os.makedirs(f'./runs/{TIME}/images')
 XLIM = [-5, 5]
